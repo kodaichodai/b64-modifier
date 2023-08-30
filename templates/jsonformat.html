@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>JSON Formatter</title>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+<body>
+    <h1>JSON Formatter</h1>
+
+    <form method="post" action="/JSONFormatString">
+        <label for="json_string">JSON String:</label>
+        <textarea name="json_string" id="json_string" rows="10" cols="50"></textarea>
+
+        <button type="submit">Format</button>
+    </form>
+</body>
+</html>
+

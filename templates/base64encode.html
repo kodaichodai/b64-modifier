@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Base64 Modifier</title>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+<body>
+    <h1>Base64 Modifier</h1>
+
+    <form>
+        <label for="base64_string">Base64 String:</label>
+        <input type="text" name="base64_string" id="base64_string">
+
+        <label for="altered_line">Altered Line:</label>
+        <input type="text" name="altered_line" id="altered_line">
+
+        <label for="custom_value">Custom Value:</label>
+        <input type="text" name="custom_value" id="custom_value">
+
+	<button type="button" onclick="decodeAndModifyBase64()">Decode &amp; Modify</button>
+    </form>
+
+    <div id="decoded_string"></div>
+    <div id="modified_string"></div>
+    <div id="encoded_string"></div>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Base64 Decoder</title>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+<body>
+    <h1>Base64 Decoder</h1>
+
+    <form method="post" action="/base64decodeString">
+        <label for="base64_string">Base64 String:</label>
+        <input type="text" name="base64_string" id="base64_string">
+
+        <button type="submit">Decode</button>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Base64 Encoder/Decoder</title>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+<body>
+    <h1>Base64 Encoder/Decoder</h1>
+
+    <h3>Decoded String:</h3>
+    <p id="decoded_string">{{ decoded_string }}</p>
+
+    <h3>Modified String:</h3>
+    <p id="modified_string">{{ modified_string }}</p>
+
+    <h3>Encoded String:</h3>
+    <p id="encoded_string">{{ encoded_string }}</p>
+
+    {% if formatted_json %}
+        <h3>Formatted JSON:</h3>
+        <pre>{{ formatted_json }}</pre>
+    {% endif %}
+
+    <a href="/base64encodeString">Go back</a>
+</body>
+</html>
+
